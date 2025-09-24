@@ -1,7 +1,13 @@
 ## Giới thiệu
 
-Ứng dụng web Java dựa trên Spring MVC (JSP/JSTL) đóng gói dưới dạng WAR. Dự án hỗ trợ build bằng Ant/PowerShell, chạy cục bộ trên GlassFish, và triển khai qua Docker hoặc Docker Compose, kịch bản build, và cấu hình mẫu JDBC.
+NestMart là một ứng dụng web Java dựa trên Spring MVC kết hợp JSP/JSTL.
+Dự án được đóng gói dưới dạng WAR, chạy cục bộ trên GlassFish Server, và sử dụng JDBC để kết nối cơ sở dữ liệu (MySQL/SQL Server).
 
+Hỗ trợ build và chạy trực tiếp bằng IDE hoặc Ant.
+
+Cấu hình kết nối cơ sở dữ liệu được cung cấp qua file web.xml (JDBC sample config).
+
+Ứng dụng triển khai với đầy đủ các chức năng thương mại điện tử: quản lý tài khoản, giỏ hàng, đặt hàng, khuyến mãi, quản lý sản phẩm, báo cáo, v.v.
 ## Công nghệ chính
 
 - **Ngôn ngữ/Runtime**: Java 8 (JRE/JDK 1.8)
