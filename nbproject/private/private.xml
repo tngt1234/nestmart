@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/controllers/SalaryController.java</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/client/productDetails.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/admin/schedule.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/admin/salary.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/controllers/OrderEMPController.java</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/models/OrdersDAO.java</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/admin/salesReport.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/controllers/CartController.java</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/models/VoucherDAOImpl.java</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/client/header.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/controllers/FeedbackEmpController.java</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/models/Orders.java</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/employee/viewOrder.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/client/returnorder.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/controllers/NotificationsEmployeeController.java</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/models/SalaryDAOImpl.java</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/client/feedback.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/client/purchase.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/employee/order.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/models/SalesReportDAOImpl.java</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/employee/feedbackEmp.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/shipper/shippers.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/controllers/OrdersClientController.java</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/employee/assignShipper.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/employee/notificationsView.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/models/DiscountDAOImpl.java</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/models/SalaryDAO.java</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/client/livechat.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/controllers/OrderDetailsController.java</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/models/OrdersDAOImpl.java</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/admin/salesDashboard.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/client/product.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/client/cart.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/admin/salaryDetails.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/client/orderinfo.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/controllers/ShippersController.java</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/client/discount.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/client/discountinfo.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/client/orderHistory.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/client/clientboard.jsp</file>
+        </group>
+    </open-files>
+</project-private>
