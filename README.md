@@ -78,11 +78,13 @@ The application is also deployed and can be accessed directly via:
 - Docker issues: verify environment variables, port conflicts, and file permissions.  
 
 ## Test Accounts
-Use the following test accounts to log in and explore the system:  
+Use the following test accounts to log in and explore the system:
 
-- Nguyen Hoang Viet – Role: Admin – Password: 1q2w3e  
-- Ngoc Linh – Role: Customer – Password: 1q2w3e  
-- Nguyen My Binh – Role: Employee – Password: 1q2w3e  
-- Ho Van Kiet – Role: Shipper – Password: 1q2w3e  
+| Username         | Email             | Password | Role        |
+|------------------|------------------|----------|-------------|
+| Nguyen Hoang Viet| nhviet@gmail.com | 1q2w3e   | Admin       |
+| Ngoc Linh        | nlinh@gmail.com  | 1q2w3e   | Customer    |
+| Nguyen My Binh   | nmbinh@gmail.com | 1q2w3e   | Employee    |
+| Ho Van Kiet      | hvkiet@gmail.com | 1q2w3e   | Shipper     |
 
 All passwords are stored as BCrypt hashes in the database.  
