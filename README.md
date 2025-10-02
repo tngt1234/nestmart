@@ -72,3 +72,11 @@ The application is also deployed and can be accessed directly via:
 - 404/500 on access: check server logs and `dispatcher-servlet.xml`.  
 - Build/Ant errors: ensure JDK 8 and Ant are in PATH.  
 - Docker issues: verify environment variables, port conflicts, and file permissions.  
+## Test Accounts
+Use the following test accounts to log in and explore the system:
+
+Nguyen Hoang Viet – Role: Admin – Password: 1q2w3e
+Ngoc Linh – Role: Customer – Password: 1q2w3e
+Nguyen My Binh – Role: Employee – Password: 1q2w3e
+Ho Van Kiet – Role: Shipper – Password: 1q2w3e
+All passwords are stored as BCrypt hashes in the database.
