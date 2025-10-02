@@ -1,80 +1,111 @@
-## Giới thiệu
+Introduction
 
-NestMart là một ứng dụng web Java dựa trên Spring MVC kết hợp JSP/JSTL.
-Dự án được đóng gói dưới dạng WAR, chạy cục bộ trên GlassFish Server, và sử dụng JDBC để kết nối cơ sở dữ liệu (MySQL/SQL Server).
+NestMart is a Java web application built with Spring MVC and JSP/JSTL.
+The project is packaged as a WAR, runs locally on GlassFish Server, and uses JDBC for database connectivity (MySQL/SQL Server).
 
-Hỗ trợ build và chạy trực tiếp bằng IDE hoặc Ant.
+It supports build and execution directly via IDE or Apache Ant.
 
-Cấu hình kết nối cơ sở dữ liệu được cung cấp qua file web.xml (JDBC sample config).
+Database connection configuration is provided through web.xml (JDBC sample config).
 
-Ứng dụng triển khai với đầy đủ các chức năng thương mại điện tử: quản lý tài khoản, giỏ hàng, đặt hàng, khuyến mãi, quản lý sản phẩm, báo cáo, v.v.
-## Công nghệ chính
+The application includes full e-commerce functionalities: account management, shopping cart, ordering, promotions, product management, reporting, etc.
 
-- **Ngôn ngữ/Runtime**: Java 8 (JRE/JDK 1.8)
-- **Framework**: Spring 4.3.x (Core, MVC, JDBC, Security)
-- **View**: JSP + JSTL
-- **App server**: GlassFish
-- **Build**: Apache Ant (`build.xml`) + PowerShell scripts
-- **Đóng gói**: WAR (`dist/nestmartappFinal.war`)
-- **CSDL**: SQL Server (driver `mssql-jdbc-12.2.0.jre8.jar`)
+Key Technologies
 
-## Yêu cầu hệ thống
+Language/Runtime: Java 8 (JRE/JDK 1.8)
 
-- JDK 8
-- Apache Ant 1.10+
-- Git
-- Glassfish Server
+Framework: Spring 4.3.x (Core, MVC, JDBC, Security)
 
-## Cấu trúc thư mục
+View: JSP + JSTL
 
-```text
+App server: GlassFish
 
-├─ src/                 # Mã nguồn Java, cấu hình MANIFEST
-├─ web/                 # Tài nguyên web tĩnh và JSP
-├─ lib/                 # Thư viện .jar (Spring, JDBC, JSTL, ...)
-├─ build/               # Thư mục build trung gian (Ant)
-├─ dist/                # WAR đầu ra (ví dụ: nestmartappFinal.war)
-├─ nbproject/           # Cấu hình NetBeans/Ant
-├─ build.xml            # Kịch bản Ant
-└─ web/WEB-INF/         # `web.xml`, `dispatcher-servlet.xml`, cấu hình Spring
-```
+Build: Apache Ant (build.xml) + PowerShell scripts
 
-## Cấu hình
+Packaging: WAR (dist/nestmartappFinal.war)
 
-- `web/WEB-INF/jdbc.properties` hoặc `web/WEB-INF/application.properties`
-  - Chỉnh thông số kết nối CSDL (URL, user, password, pool...).
-- `web/WEB-INF/applicationContext.xml`, `dispatcher-servlet.xml`
-  - Khai báo bean, datasource, view resolver, component scan, v.v.
-- Không commit thông tin nhạy cảm. Dùng biến môi trường/secret trong CI/CD nếu cần.
+Database: SQL Server (driver mssql-jdbc-12.2.0.jre8.jar)
 
+System Requirements
 
-## Chạy trong NetBeans với GlassFish
+JDK 8
 
-1. Mở dự án trong NetBeans (8.x/12.x).
-2. Thêm GlassFish vào NetBeans:
-   - Tools → Servers → Add Server → GlassFish Server → Next
-   - Chọn thư mục cài `GLASSFISH_HOME`, domain `domain1`
-   - Java Platform: chọn JDK 8
-3. Đặt GlassFish làm server chạy cho project:
-   - Chuột phải project → Properties → Run
-   - Server: chọn GlassFish Server
-   - Context Path: đặt `<context-path>` mong muốn (ví dụ `/app`)
-4. Cấu hình JDBC (nếu dùng SQL Server):
-   - Sao chép `lib/mssql-jdbc-12.2.0.jre8.jar` vào `GLASSFISH_HOME\glassfish\domains\domain1\lib`
-   - Khởi động GlassFish, mở Admin Console `http://localhost:4848`
-   - Tạo JDBC Connection Pool và JDBC Resource (nếu app dùng JNDI)
-   - Hoặc đảm bảo `web/WEB-INF/jdbc.properties` có thông tin kết nối đúng
-5. Chạy ứng dụng:
-   - Chuột phải project → Run (hoặc F6)
-   - NetBeans sẽ build WAR và deploy lên GlassFish
-   - Truy cập: `http://localhost:8080/<context-path>`
+Apache Ant 1.10+
 
-## Gỡ lỗi
+Git
 
-- Lỗi kết nối DB: kiểm tra `jdbc.properties` và driver JDBC trong `lib/`.
-- 404/500 khi truy cập: xem log server (Tomcat/GlassFish) và cấu hình `dispatcher-servlet.xml`.
-- Lỗi build/Ant: đảm bảo JDK 8 và Ant đã có trong PATH.
-- Lỗi Docker: kiểm tra biến môi trường truyền vào image/container, cổng trùng lặp, quyền truy cập file.
+GlassFish Server
 
+Project Structure
+├─ src/                 # Java source code, MANIFEST configuration
+├─ web/                 # Web resources and JSP files
+├─ lib/                 # Library JARs (Spring, JDBC, JSTL, etc.)
+├─ build/               # Intermediate build directory (Ant)
+├─ dist/                # WAR output (e.g. nestmartappFinal.war)
+├─ nbproject/           # NetBeans/Ant project settings
+├─ build.xml            # Ant build script
+└─ web/WEB-INF/         # web.xml, dispatcher-servlet.xml, Spring configs
 
+Configuration
 
+web/WEB-INF/jdbc.properties or web/WEB-INF/application.properties
+
+Edit DB connection parameters (URL, user, password, pool, etc.).
+
+web/WEB-INF/applicationContext.xml, dispatcher-servlet.xml
+
+Declare beans, datasource, view resolver, component scan, etc.
+
+⚠️ Do not commit sensitive information. Use environment variables/secrets in CI/CD if necessary.
+
+Running in NetBeans with GlassFish
+
+Open the project in NetBeans (8.x/12.x).
+
+Add GlassFish to NetBeans:
+
+Tools → Servers → Add Server → GlassFish Server → Next
+
+Choose GLASSFISH_HOME, domain domain1
+
+Java Platform: select JDK 8
+
+Set GlassFish as project server:
+
+Right-click project → Properties → Run
+
+Server: GlassFish Server
+
+Context Path: <context-path> (e.g. /app)
+
+Configure JDBC (if using SQL Server):
+
+Copy lib/mssql-jdbc-12.2.0.jre8.jar into GLASSFISH_HOME\glassfish\domains\domain1\lib
+
+Start GlassFish, open Admin Console http://localhost:4848
+
+Create JDBC Connection Pool & JDBC Resource (if app uses JNDI)
+
+Or make sure web/WEB-INF/jdbc.properties contains correct DB connection info
+
+Run the application:
+
+Right-click project → Run (or press F6)
+
+NetBeans will build WAR and deploy it to GlassFish
+
+Access: http://localhost:8080/<context-path>
+
+Running on Public Server
+
+The application is also deployed and can be accessed directly via:
+👉 https://nestmart.publicvm.com/nestmartappFinal/client/orderHistory.htm
+
+Troubleshooting
+
+DB connection errors: check jdbc.properties and JDBC driver in lib/.
+
+404/500 on access: check server logs and dispatcher-servlet.xml.
+
+Build/Ant errors: ensure JDK 8 and Ant are in PATH.
+
+Docker issues: verify environment variables, port conflicts, and file permissions.
