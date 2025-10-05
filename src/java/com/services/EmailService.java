@@ -195,15 +195,6 @@ public class EmailService {
             "                Your password will remain unchanged and your account stays secure.</p>\n" +
             "                <p style=\"margin-top: 10px;\">This link will expire in 30 minutes for your security.</p>\n" +
             "            </div>\n" +
-            "            \n" +
-            "            <div class=\"divider\"></div>\n" +
-            "            \n" +
-            "            <p style=\"font-size: 14px; color: #777; text-align: center;\">\n" +
-            "                If the button doesn't work, you can copy and paste this link into your browser:\n" +
-            "                <br><br>\n" +
-            "                <span style=\"word-break: break-all; color: #ff9702;\">" + resetLink + "</span>\n" +
-            "            </p>\n" +
-            "        </div>\n" +
             "        \n" +
             "        <div class=\"footer\">\n" +
             "            <p><strong>NestMart - Quality Organic Products</strong></p>\n" +

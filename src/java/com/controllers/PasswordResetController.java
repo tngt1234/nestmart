@@ -75,7 +75,7 @@ public String showForgotPasswordForm(HttpServletRequest request,
 
         tokenStore.put(token, tokenInfo);
 
-        String resetLink = "http://localhost:8080/nestmartFinal/resetPassword.htm?token=" + token;
+        String resetLink = "https://nestmart.publicvm.com/nestmartappFinal/resetPassword.htm?token=" + token;
         emailService.sendResetPasswordEmail(email, resetLink);
 
         redirectAttributes.addFlashAttribute("message", "A password reset link has been sent to your email.");

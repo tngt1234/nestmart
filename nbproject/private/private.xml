@@ -24,6 +24,7 @@
             <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/client/feedback.jsp</file>
             <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/WEB-INF/jdbc.properties</file>
             <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/client/purchase.jsp</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/assets/client/css/style.css</file>
             <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/employee/order.jsp</file>
             <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/models/SalesReportDAOImpl.java</file>
             <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/employee/feedbackEmp.jsp</file>
@@ -33,6 +34,7 @@
             <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/employee/notificationsView.jsp</file>
             <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/models/DiscountDAOImpl.java</file>
             <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/models/SalaryDAO.java</file>
+            <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/login.jsp</file>
             <file>file:/D:/A22043/nestmartFinal/nestmartFinal/web/jsp/client/livechat.jsp</file>
             <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/controllers/OrderDetailsController.java</file>
             <file>file:/D:/A22043/nestmartFinal/nestmartFinal/src/java/com/models/OrdersDAOImpl.java</file>
