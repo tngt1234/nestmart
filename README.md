@@ -23,15 +23,19 @@ The application includes full e-commerce functionalities: account management, sh
 - Git  
 - GlassFish Server  
 
+## Database Setup
+- Import the schema and sample data from `/database/nestmart.sql`  
+- Make sure to update `jdbc.properties` with your DB connection settings.  
+
 ## Project Structure
-├─ src/ # Java source code, MANIFEST configuration
-├─ web/ # Web resources and JSP files
-├─ lib/ # Library JARs (Spring, JDBC, JSTL, etc.)
-├─ build/ # Intermediate build directory (Ant)
-├─ dist/ # WAR output (e.g. nestmartappFinal.war)
-├─ nbproject/ # NetBeans/Ant project settings
-├─ build.xml # Ant build script
-└─ web/WEB-INF/ # web.xml, dispatcher-servlet.xml, Spring configs
+├─ src/ # Java source code, MANIFEST configuration  
+├─ web/ # Web resources and JSP files  
+├─ lib/ # Library JARs (Spring, JDBC, JSTL, etc.)  
+├─ build/ # Intermediate build directory (Ant)  
+├─ dist/ # WAR output (e.g. nestmartappFinal.war)  
+├─ nbproject/ # NetBeans/Ant project settings  
+├─ build.xml # Ant build script  
+└─ web/WEB-INF/ # web.xml, dispatcher-servlet.xml, Spring configs  
 
 ## Configuration
 - `web/WEB-INF/jdbc.properties` or `web/WEB-INF/application.properties`  
@@ -72,3 +76,15 @@ The application is also deployed and can be accessed directly via:
 - 404/500 on access: check server logs and `dispatcher-servlet.xml`.  
 - Build/Ant errors: ensure JDK 8 and Ant are in PATH.  
 - Docker issues: verify environment variables, port conflicts, and file permissions.  
+
+## Test Accounts
+Use the following test accounts to log in and explore the system:
+
+| Username         | Email             | Password | Role        |
+|------------------|------------------|----------|-------------|
+| Nguyen Hoang Viet| nhviet@gmail.com | 1q2w3e   | Admin       |
+| Ngoc Linh        | nlinh@gmail.com  | 1q2w3e   | Customer    |
+| Nguyen My Binh   | nmbinh@gmail.com | 1q2w3e   | Employee    |
+| Ho Van Kiet      | hvkiet@gmail.com | 1q2w3e   | Shipper     |
+
+All passwords are stored as BCrypt hashes in the database.  
